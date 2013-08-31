@@ -13,10 +13,8 @@
 
 #bg {
   position: fixed; 
-  top: -50%; 
+  top: 0; 
   left: 0; 
-	
-   Preserve aspet ratio 
   min-width: 100%;
   min-height: 100%;
   width: 100%;
@@ -187,11 +185,3 @@ button:hover{
 	margin-left: 180px;
 	width: 440px;
 }
-
-
-
-
-
-
-
-
