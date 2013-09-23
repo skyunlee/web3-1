@@ -1,0 +1,138 @@
+$main-color: #cc6666;
+$bg: #993333;
+
+html, body, .cow-container, .cow-scroller {
+	height: 100%;
+	background-color: $bg;
+}
+
+.cow-scroller {
+	section {
+		height: 100%;
+		position: relative;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+
+		h2{
+			font-family: Futura, Helvetica, Arial, sans-serif;
+			font-size: 1.75em;
+			font-weight: bolder;
+			margin: 0;
+			padding: 1.25em;
+			float: left;
+			width: 25%;
+			color: $main-color;
+		}
+	}
+
+	nav {
+		position: fixed;
+		z-index: 9999;
+		right: 5em;
+		top: 50%;
+		width: 1em;
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+
+		a {
+			display: block;
+			position: relative;
+			z-index: 9999;
+			width: 1em;
+			height: 1em;
+			outline: none;
+			margin: 1.2em 0;
+			border-radius: 25%;
+			border: .4em solid $main-color;
+		}
+
+		a:hover{
+			background: rgba(204, 102, 102, 0.4);
+		}
+
+	}
+}
+
+#cowsection1{
+	background-image: url(../img/cow.png);
+}
+
+#cowsection2{
+	background-image: url(../img/cow+bell.png);
+}
+
+#cowsection3{
+	background-image: url(../img/cow+bell+hat.png);
+}
+
+#cowsection4{
+	background-image: url(../img/cow+bell+hat+boot.png);
+}
+
+#cowsection5{
+	background-image: url(../img/cow+bell+hat+boot+milk.png);
+}
+
+#cowsection6{
+	background-image: url(../img/cow+bell+hat+boot+milk+moo.png);
+}
+
+
+/*----------------Tablet ----------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	.cow-scroller section {
+		background-position: center;
+		background-size: 110%;
+	
+		h2{
+			font-size: 1.2em;
+			padding: .8em;
+			width: 25%;
+			text-align: left;
+		}
+	}	
+	.cow-scroller nav {
+		right: 3em;
+
+		a{
+			width: .8em;
+			height: .8em;
+			border: .3em solid $main-color;
+			margin: 1.2em 0;
+		}
+	}
+
+}
+
+
+/*----------------Mobile ----------------*/
+
+@media screen and (max-width: 767px){
+
+	.cow-scroller section {
+		background-position: center;
+		background-size: 130%;
+	
+		h2{
+			font-size: 1.2em;
+			padding: 1em;
+			width: 90%;
+			text-align: center;
+		}
+	}	
+	.cow-scroller nav {
+		right: 1.5em;
+
+		a{
+			width: .6em;
+			height: .6em;
+			border: .2em solid $main-color;
+			margin: .8em 0;
+		}
+	}
+}
+
