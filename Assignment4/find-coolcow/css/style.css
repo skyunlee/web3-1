@@ -1,0 +1,188 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background: #ecf0f1;
+  text-align: center;
+}
+
+#container {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+#container h1 {
+  font-weight: 100;
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: -3px;
+  color: #34495e;
+}
+#container h3 {
+  font-family: Georgia, Times, serif;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: normal;
+  color: #34495e;
+  line-height: 18px;
+  width: 95%;
+}
+#container div {
+  float: left;
+  margin: 2px;
+  display: inline-block;
+  width: 275px;
+  height: 300px;
+  border: 1px solid #ccc;
+  -webkit-transition: all 500ms ease-in-out;
+  -webkit-transform-style: preserve-3d;
+}
+#container div p {
+  color: #eee;
+  font-size: 60px;
+  text-align: center;
+  font-weight: bolder;
+  letter-spacing: -7px;
+  line-height: 50px;
+}
+#container div:hover {
+  opacity: 0.6;
+}
+#container div.is-clicked p {
+  display: none;
+}
+#container div.is-clicked:after {
+  color: #eee;
+  font-size: 60px;
+  text-align: center;
+  font-weight: bolder;
+  letter-spacing: -7px;
+  line-height: 50px;
+  padding: 40px;
+}
+
+.one {
+  background: #3498db;
+}
+.one.is-clicked {
+  background: #2980b9;
+  -webkit-transform: rotate3d(1, 8, 4, 1430deg);
+}
+.one.is-clicked:after {
+  content: "Boohoo!";
+}
+
+.two {
+  background: #16a085;
+}
+.two.is-clicked {
+  background: #27ae60;
+  -webkit-transform: rotate3d(1, 1, 1, 358deg);
+}
+.two.is-clicked:after {
+  content: "Sorry to put you through this.";
+}
+
+.three {
+  background: #1abc9c;
+}
+.three.is-clicked {
+  background: #34495e;
+  -webkit-transform: rotate3d(1, 1, 1, 2515deg);
+}
+.three.is-clicked:after {
+  content: "Nah! Not in here.";
+}
+
+.four {
+  background: #2ecc71;
+}
+.four.is-clicked {
+  background-image: url(../img/notreal.png);
+  background-size: 275px 300px;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate3d(0, 0, 1, 370deg);
+}
+
+.five {
+  background: #27ae60;
+}
+.five.is-clicked {
+  background: #3498db;
+  -webkit-transform: rotate3d(5, 1, 1, 340deg);
+}
+.five.is-clicked:after {
+  content: "Gotchya! Uhh..maybe not.";
+}
+
+.six {
+  background: #f1c40f;
+}
+.six.is-clicked {
+  background-image: url(../img/olduber.png);
+  background-size: 275px 300px;
+  -webkit-transform: rotate3d(1, 3, 1, 345deg);
+}
+
+.seven {
+  background: #f39c12;
+}
+.seven.is-clicked {
+  background: #e74c3c;
+  -webkit-transform: translateX(10px) rotate(165deg);
+}
+.seven.is-clicked:after {
+  content: "D:";
+}
+
+.eight {
+  background: #e67e22;
+}
+.eight.is-clicked {
+  background-image: url(../img/cow.png);
+  background-size: 275px 300px;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate3d(1, 1, 1, 710deg);
+}
+
+.nine {
+  background: #e74c3c;
+}
+.nine.is-clicked {
+  background: #f1c40f;
+  -webkit-transform: rotate3d(5, 1, 0, 365deg);
+}
+.nine.is-clicked:after {
+  content: "Hahaha!";
+}
+
+.ten {
+  background: #c0392b;
+}
+.ten.is-clicked {
+  background: #f39c12;
+  -webkit-transform: rotate3d(1, 1, 1, 2530deg);
+}
+.ten.is-clicked:after {
+  content: "You found her?!";
+}
+
+#cowfound {
+  z-index: 100;
+  background: #f17288;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  margin: 0 auto;
+  margin-left: -8px;
+  -webkit-transform: translate(0, 650%);
+  clear: both;
+  float: right;
+  transition: all 1500ms ease-in-out;
+  transition-delay: 500ms;
+}
+#cowfound h2 {
+  font-weight: 100;
+  color: #eee;
+}
+#cowfound.is-active {
+  -webkit-transform: translate(0, 500%);
+}
