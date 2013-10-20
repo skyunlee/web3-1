@@ -162,6 +162,21 @@
 		<script type="text/javascript" src="html5lightbox/jquery.js"></script>
 		<script type="text/javascript" src="html5lightbox/html5lightbox.js"></script>
 		
+		<!-- Script for smooth scroll animation. From: http://css-tricks.com/snippets/jquery/smooth-scrolling/ -->
+		<script type="text/javascript">$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});</script>
 	</body>
 
 </html>
