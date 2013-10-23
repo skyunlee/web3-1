@@ -1,0 +1,51 @@
+/*----------------Tablet ----------------*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .page-content {
+    top: 50%;
+  }
+
+  .playbutton {
+    top: 17%;
+  }
+
+  .nav a {
+    display: block;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+
+  .about {
+    margin-left: 5% !important;
+  }
+
+  .about-text {
+    width: 100% !important;
+  }
+}
+/*----------------Mobile ----------------*/
+@media screen and (max-width: 767px) {
+  .page-content {
+    top: 28%;
+  }
+
+  .playbutton {
+    top: 10%;
+    left: 40%;
+  }
+
+  .nav a {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  .about {
+    margin-left: 5% !important;
+  }
+
+  .about-text {
+    width: 100% !important;
+  }
+}
