@@ -22,6 +22,14 @@
   .about-text {
     width: 100% !important;
   }
+
+  .thm_first_column,
+  .thm_second_column,
+  .thm_third_column,
+  .thm_fourth_column{
+    /*display: inline-block;*/
+    width: 24%;
+  }
 }
 /*----------------Mobile ----------------*/
 @media screen and (max-width: 767px) {
@@ -47,5 +55,13 @@
 
   .about-text {
     width: 100% !important;
+  }
+
+  .thm_first_column,
+  .thm_second_column,
+  .thm_third_column,
+  .thm_fourth_column{
+    display: inline-block;
+    width: 100%;
   }
 }
