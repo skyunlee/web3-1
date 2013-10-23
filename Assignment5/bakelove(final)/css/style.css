@@ -536,7 +536,7 @@ figcaption {
 }
 
 .career_bakery_photo img {
-  width: 80%;
+  width: 100%;
 }
 
 .career_container .content_text {
@@ -547,13 +547,14 @@ figcaption {
   margin-top: 1.2em;
   margin-left: 5em;
   margin-bottom: 2.0em;
-  /*line-height: 1.5em;*/
-  /*font-size: 0.8em;*/
+/*  line-height: 1.5em;
+  font-size: 0.8em;*/
 }
 
 .career_container .content_text p{
   font-size: 0.8em;
   line-height: 1.5em;
+  margin-top: 1.5em;
 }
 
 .career_container .content_text a {
